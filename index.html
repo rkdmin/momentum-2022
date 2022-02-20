@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <p id="clock">00:00</p>
+    <div id = container>
+        <form id="login-form" class="hidden">
+            <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+            />
+            <input type="submit" value="Log in"/>
+        </form>
+        <h1 id="greeting" class="hidden" class="text"></h1>
+        <form id="to-do-form" class="hidden">
+            <input type="text" placeholder="Write and Press Enter" required />
+        </form>
+        <ui id="to-do-list"></ui><!-- js를 통해 li(list)들을 생성 --> 
+        <p id="saying"></p>
+        <p id="weather">
+            <span></span>
+            <span></span>
+        </p>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/saying.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
