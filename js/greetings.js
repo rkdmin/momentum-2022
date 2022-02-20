@@ -12,12 +12,12 @@ const USERNAME_KEY = "username";
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 if(savedUserName === null){// 없으면 form
     loginForm.classList.toggle(HIDDEN_CLASSNAME);// db에 username이 없다면 다시 form 생김
+    askName.classList.toggle(HIDDEN_CLASSNAME);
 }
 else{// 있으면 greeting
     greeting.innerText = `Hello ${savedUserName}`; 
     greeting.classList.toggle(HIDDEN_CLASSNAME);
     toDoForm.classList.toggle(HIDDEN_CLASSNAME);
-    askName.classList.toggle(HIDDEN_CLASSNAME);
 }
 
 // submit을 눌렀을 때
