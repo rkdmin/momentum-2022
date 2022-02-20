@@ -3,7 +3,7 @@
 }
 body{
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 1980px 1080px;
 }
 #container {
     border-top-left-radius: 37px 140px;
@@ -96,4 +96,8 @@ p{
             3px 3px 0px #efa032,
             4px 4px 0px #017e7f;
 
+}
+.login:hover{
+    background-color: pink;
+    color:#ff1f8f;
 }
